@@ -29,10 +29,10 @@ class TestLogin():
     def driver(self, request):
         driver_ = webdriver.Firefox()
 
-        #def quit():
-        #    driver_.quit()
+        def quit():
+            driver_.quit()
 
-        #request.addfinalizer(quit)
+        request.addfinalizer(quit)
         return driver_
 
     def test_create_client(self,driver):
